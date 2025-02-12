@@ -1,0 +1,58 @@
+/* Ensures sections are accessible when clicking navbar links */
+section {
+    scroll-margin-top: 5rem;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+/* Fullscreen mode styling */
+.fullscreen {
+    width: 100vw !important;
+    height: 100vh !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20;
+}
+
+/* Navbar Styling */
+nav {
+    background-color: #2563eb;
+    padding: 1rem;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 50;
+}
+
+/* Image Styling */
+img {
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .flex-col {
+        flex-direction: column;
+    }
+
+    section {
+        width: 100%;
+        height: 50vh;
+    }
+}
+
+@media (max-width: 768px) {
+    section {
+        height: auto;
+        padding: 2rem;
+    }
+
+    img {
+        width: 80%;
+    }
+}
